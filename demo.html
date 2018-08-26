@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	
+	<title>Anti-Overflow Fluid Font Size</title>
+	<meta name="description" content="Avoid long words breaking your page overflowing its container or even the screen. Just resize the window as much as you want and check it, you can open the console to see what's happening.">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/demo-styles.css">
+
+	<script src="assets/AntiOverflowFontResizer-demo.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="container text-center mt-4 mb-4">
+			<div class="row justify-content-center">
+				<div class="col-sm-11 col-md-10 col-lg-9 col-xl-8">
+					
+					<div class="card text-white bg-success">
+						<div class="card-header border-0">
+							<b>Normal mode</b> (Longest word)
+						</div>
+						<h1 class="main-title title-1 mt-2 mb-3">
+							<b>AntiOverflowFontResizer.js</b> is a very long name
+						</h1>
+						<div class="card-footer border-0">
+							<small>
+								<div class="row">
+									<div class="col-sm-12 col-md-6">
+										@media (
+										<strong>
+											<span class="d-none d-sm-inline">min-width:</span>  
+											<span class="d-sm-none">max-width: 576px</span> 
+											<span class="d-none d-sm-inline d-md-none">576px</span> 
+											<span class="d-none d-md-inline d-lg-none">768px</span> 
+											<span class="d-none d-lg-inline d-xl-none">992px</span> 
+											<span class="d-none d-xl-inline">1200px</span>
+										</strong>
+										)
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<span class="css"></span> 
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<span class="js"></span>
+									</div>
+								</div>
+							</small>
+						</div>
+					</div>
+					
+					<div class="card text-white bg-info mt-3">
+						<div class="card-header border-0">
+							<b>Phrase mode</b> (Whole line)
+						</div>
+						<h1 class="phrase-1 mt-2 mb-3">
+							<b>AntiOverflowFontResizer.js</b> is a very long name
+						</h1>
+						<div class="card-footer border-0">
+							<small>
+								<div class="row">
+									<div class="col-sm-12 col-md-6">
+										@media (
+										<strong>
+											<span class="d-none d-sm-inline">min-width:</span>  
+											<span class="d-sm-none">max-width: 576px</span> 
+											<span class="d-none d-sm-inline d-md-none">576px</span> 
+											<span class="d-none d-md-inline d-lg-none">768px</span> 
+											<span class="d-none d-lg-inline d-xl-none">992px</span> 
+											<span class="d-none d-xl-inline">1200px</span>
+										</strong>
+										)
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<span class="css"></span> 
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<span class="js"></span>
+									</div>
+								</div>
+							</small>
+						</div>
+					</div>
+					
+					<div class="card text-white bg-danger mt-3">
+						<div class="card-header border-0">
+							<b>Without the script</b> 😫
+						</div>
+						<h1 class="main-title mt-2 mb-3">
+							<b>AntiOverflowFontResizer.js</b> is a very long name
+						</h1>
+						<div class="card-footer border-0">
+							<small>
+								<div class="row">
+									<div class="col-sm-6">
+										@media (
+										<strong>
+											<span class="d-none d-sm-inline">min-width:</span>  
+											<span class="d-sm-none">max-width: 576px</span> 
+											<span class="d-none d-sm-inline d-md-none">576px</span> 
+											<span class="d-none d-md-inline d-lg-none">768px</span> 
+											<span class="d-none d-lg-inline d-xl-none">992px</span> 
+											<span class="d-none d-xl-inline">1200px</span>
+										</strong>
+										)
+									</div>
+									<div class="col-sm-6">
+										<b>CSS</b> =
+										<span class="d-sm-none">30px</span> 
+										<span class="d-none d-sm-inline d-md-none">40px</span> 
+										<span class="d-none d-md-inline d-lg-none">50px</span> 
+										<span class="d-none d-lg-inline d-xl-none">60px</span> 
+										<span class="d-none d-xl-inline">64px</span>
+									</div>
+								</div>
+							</small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<script>
+		$('.title-1').aofsr().addClass( 'FluidFontType' );
+
+		$('.phrase-1').aofsr({
+			phraseMode: true
+		});
+	</script>
+</body>
+</html>

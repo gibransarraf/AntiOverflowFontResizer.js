@@ -1,0 +1,32 @@
+body{
+    background-color: #666666;
+}
+header{
+    overflow: hidden;
+}
+.card{
+    border: none;
+    word-wrap: normal;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.card-header{
+    background-color: rgba(0,0,0,.3);
+}
+.card-footer{
+    background-color: rgba(0,0,0,.1);
+}
+.main-title{
+    font-size: 30px;
+}
+@media ( min-width: 576px ){
+    .main-title{ font-size: 40px; }
+}
+@media ( min-width: 768px ){
+    .main-title{ font-size: 50px; }
+}
+@media ( min-width: 992px ){
+    .main-title{ font-size: 60px; }
+}
+@media ( min-width: 1200px ){
+    .main-title{ font-size: 64px; }
+}
