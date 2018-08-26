@@ -2,12 +2,10 @@
 
 Avoid long words breaking your page overflowing its container or even the screen.
 
-**Check out the [demo here](https://gibransarraf.com/antioverflowfontresizer).**  
+**Check out the <a href="https://gibransarraf.com/antioverflowfontresizer/" target="_blank">demo here</a>.**  
 Just resize the window as much as you want and check it, you can open the console to see what's happening.  
 
-```javascript
-$('your-element').aofsr();
-```
+I came up with this code to solve a project's problem because I couldn't find a simple and flexible script already done. So if you want, you can <a href="https://www.paypal.me/GibranSarraf/" target="_blank">![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)</a>
 
 ## What AntiOverflowFontResizer.js does
 
@@ -16,6 +14,10 @@ Texts are designed with an ideal font size for each breakpoint but sometimes a l
 This can happen a lot if you work on the design of a page that will be a multilanguage site for example.
 
 ## How it works
+
+```javascript
+$('your-element').FluidFontType();
+```
 
 ### On page load
 
@@ -48,9 +50,9 @@ If that's true, continue
 Put this option on `true` and the code will adjust the font size so the whole phrase fits in the container.
 
 ```javascript
-$('your-element').aofsr({
+$('your-element').FluidFontType({
     phraseMode: true
 });
 ```
 
-> **Note:** If the text has CSS property `white-space: nowrap;` already set, then the code will adjust the font size to fit the whole text and it's not necessary to turn this feature ON.
+> **Note:** If the text has CSS property `white-space:  nowrap;` already, then the code will adjust the font size to fit the whole text and it's not necessary to turn this feature ON.
