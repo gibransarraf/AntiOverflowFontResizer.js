@@ -45,7 +45,11 @@ If that's true, continue
 1. **Calculates the proper font size**
 2. **Reduces the text font size**
 
-## Fit an entire phrase inside the container
+## Configuration
+
+There's **no need to configure anything**, the script checks the text's current `font-size` on each breakpoint and adjusts it if necessary.
+
+### Fit an entire phrase inside the container
 
 Put this option on `true` and the code will adjust the font size so the whole phrase fits in the container.
 
